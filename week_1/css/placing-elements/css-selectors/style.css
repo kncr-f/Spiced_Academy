@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    background-color: bisque;
+}
+header {
+    text-align: center;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
+    left: 50vw;
+    animation: slide 2s reverse infinite;
+}
+aside {
+    float: right;
+    height: 100px;
+}
+img {
+    width: 300px;
+    float: right;
+}
+main {
+    float: left;
+}
+
+#tomato {
+    background-color: pink;
+    padding: 20px !important;
+    font-size: 70px;
+}
+
+#section-bottom {
+    border: 3px solid cyan !important;
+    border-radius: 10px;
+}
+
+#wolf {
+    background-color: #ddd;
+    font-size: 300px;
+    position: absolute;
+    transform: translate(40vw, -25vw);
+    transition: transform 1.3s ease-in;
+    border: 4px dashed yellowgreen;
+    border-radius: 50%;
+}
+
+#wolf:hover {
+    transform: translate(20vw, 0vw) scale(2);
+}
+
+#section-bottom {
+    border: 2px solid grey;
+}
+
+.things {
+    background-color: purple;
+}
+
+.good {
+    background-color: #ddd;
+}
+
+div .first-div {
+    background-color: yellow;
+}
+
+div #quotes {
+    background-color: green;
+}
+
+input[name="firstname"] {
+    background-color: turquoise;
+    animation: slide 2s forwards;
+}
+
+img[alt="cool duck"] {
+    border: 10px dotted whitesmoke;
+    animation: slide 2s reverse infinite;
+}
+
+li:first-child {
+    font-size: 6px;
+    animation: slide 2s forwards;
+}
+
+li:last-child {
+    background-color: black;
+    color: white;
+}
+
+div:hover,
+h1:hover {
+    background-color: cyan;
+    border: 2px solid brown;
+    cursor: pointer;
+}
+
+a:active {
+    background-color: red;
+    color: yellow;
+    border: 2px solid black;
+}
+
+a:visited {
+    color: chocolate;
+}
+
+div:before {
+    content: "🙉";
+    font-size: "20px";
+}
+
+p:after {
+    content: "hello there";
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translate(-100px, 200px);
+    }
+    50% {
+        transform: translateX(-200px) rotate(270deg);
+    }
+    90% {
+        transform: translateX(100px) rotate(45deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* 
+
+Specificity in CSS
+
+* > tag > class > id > !important  
+
+*/
