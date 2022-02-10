@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.top,
+.bottom {
+    position: absolute;
+}
+
+.top {
+    overflow: hidden;
+    width: 300px;
+}
+
+.slider {
+    position: absolute;
+    left: 300px;
+    background-color: #000;
+    width: 15px;
+    height: 400px;
+    cursor: pointer;
+}
