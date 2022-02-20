@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    gap: 5px;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    display: grid;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+}
+
+.box1 {
+    background-color: grey;
+}
+.box2 {
+    background-color: black;
+}
+.box3 {
+    background-color: blue;
+}
+.box4 {
+    background-color: purple;
+}
+
+.small1 {
+    background-color: orange;
+    justify-self: end;
+}
+.small2 {
+    background-color: yellow;
+    justify-self: end;
+    align-self: end;
+}
+.small3 {
+    background-color: green;
+    align-self: end;
+}
+.small4 {
+    background-color: lightpink;
+}
