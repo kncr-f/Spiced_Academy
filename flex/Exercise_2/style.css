@@ -1,0 +1,20 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    background-color: orange;
+    height: 70px;
+}
+
+main {
+    flex-grow: 1;
+    background-color: grey;
+}
+
+footer {
+    background-color: pink;
+    height: 30px;
+}
