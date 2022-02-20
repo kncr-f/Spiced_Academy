@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 150px;
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
