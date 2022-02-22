@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: bisque;
+    height: 100vh;
+}
+
+#board {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 60px solid indianred;
+    transform: translate(-50px, -50px);
+}
+
+.player1 {
+    background-color: darkcyan;
+    z-index: 2;
+}
+.player2 {
+    background-color: yellow;
+    z-index: 2;
+}
+
+#board {
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+.animate {
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+
+.won {
+    display: none;
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 58px;
+    background-color: brown;
+    opacity: 0.9;
+    width: 314px;
+    height: 300px;
+    color: greenyellow;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.won button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 84%;
+    font-size: 26px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 112px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+#minimum_slot {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    font-size: 15px;
+}
+
+.button_bottoms {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 50px;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
