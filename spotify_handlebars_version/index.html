@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Spotify Handlebars Version</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="spotify_img">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwSDcPB5BiNYYBFYC9kcG8st464LzORMRsA&usqp=CAU"
+                    alt="spotify_img"
+                />
+            </div>
+            <div class="search-fields">
+                <div class="info">
+                    <input type="text" />
+                    <select id="artist_album">
+                        <option value="artist">Artist</option>
+                        <option value="album">Album</option>
+                    </select>
+                    <button class="submit-button">Submit</button>
+                </div>
+            </div>
+            <div class="results-container"></div>
+            <script id="spotify" type="text/x-handlebars-template">
+                {{#items}}
+
+                    <div id="text">
+                        <a href={{external_urls.spotify}}>
+                            {{name}}
+                        </a>
+                    </div>
+                    <a href={{external_urls.spotify}}>
+                        {{! if else block??}}
+                        {{#if images}}
+                            <img src="{{images.0.url}}" />
+                        {{else}}
+                            <img
+                                src="https://www.viewstorm.com/wp-content/uploads/2014/10/default-img.gif"
+                            />
+                        {{/if}}
+                    </a>
+
+                {{/items}}
+            </script>
+            <button class="show_more">Show more</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
