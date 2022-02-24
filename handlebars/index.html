@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Handlebars</title>
+    </head>
+    <body>
+        <div class="author_info"></div>
+        <script id="authors" type="text/x-handlebars-template">
+                {{#authors}}
+                <div class="card">
+                <img src='{{photo}}'>
+                <h2>{{name}}</h2>
+
+                <section>
+                    <div class="properties">Born:</div>
+                    <div class="values">
+                        <p>{{born}}</p>
+                    </div>
+                    <div class="properties">Died:</div>
+                    <div class="values">
+                        <p>{{died}}</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="properties">Quote:</div>
+                    <div class="values">
+                        <p>{{quote}}</p>
+                </section>
+                <section>
+                    <div class="properties">Selected Writings:</div>
+                    <div class="values">
+                        {{#selectedWritings}}
+                            <p>{{.}}</p>
+                        {{/selectedWritings}}
+                    </div>
+                </section>
+            </div>
+
+
+
+                {{/authors}}
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

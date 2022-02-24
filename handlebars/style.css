@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.author_info {
+    display: flex;
+}
+img {
+    width: 250px;
+    height: 250px;
+}
+.card {
+    margin: 10px;
+}
