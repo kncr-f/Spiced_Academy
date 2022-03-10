@@ -1,0 +1,20 @@
+
+<h1 class="description_title">{{match.title}}</h1>
+<div class="description">
+    <div class="description_side">
+    <h3>My Projects</h3> 
+    {{>projList descriptionPage=true}}
+    </div>
+
+<div class="description_main">
+    <a href="/{{match.directory}}/index.html"> 
+        <img class="description_img" src="/{{match.directory}}/Screenshot.jpg" />          
+    </a>
+   
+    <a target="_blank" href="/{{match.directory}}/index.html">{{match.title}}</a>
+
+   <p class="match_desciption">{{match.description}}</p> 
+
+</div>
+
+</div>

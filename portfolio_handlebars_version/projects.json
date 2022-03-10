@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Canvas",
+        "directory": "Canvas",
+        "description": "I am quite proud of this project and I had a really great time working on it."
+    },
+    {
+        "title": "Kitty Carousel",
+        "directory": "Kitty_Carousel",
+        "description": "I am quite proud of this project and I had a really great time working on it."
+    },
+    {
+        "title": "Connect Four",
+        "directory": "connect_four",
+        "description": "I am quite proud of this project and I had a really great time working on it."
+    },
+    {
+        "title": "Incremental Search",
+        "directory": "incremental_search",
+        "description": "I learn with this project how to get data with ajax request from an Api."
+    },
+    {
+        "title": "Spotify Search",
+        "directory": "spotify_search",
+        "description": "This project presented me a good oportinity to understand how works the infinitive scroll logic."
+    }
+]

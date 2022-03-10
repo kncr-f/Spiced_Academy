@@ -1,0 +1,16 @@
+{{#projects}}
+
+    <div class="item">
+        {{#if ../welcomePage}}
+            <a href="/projects/{{directory}}">
+                <img class="img" src="/{{directory}}/Screenshot.jpg" />
+            </a>
+    <a class="title" href="/projects/{{directory}}">{{title}}</a>
+        {{/if}}
+{{#if ../descriptionPage}}
+    
+    <a class="title" id="partial_a" href="/projects/{{directory}}">{{title}}</a>
+{{/if}}
+    </div>
+
+{{/projects}}

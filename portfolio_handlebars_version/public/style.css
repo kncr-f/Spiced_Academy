@@ -1,0 +1,119 @@
+body {
+    background-color: dimgrey;
+    color: antiquewhite;
+    margin-top: 50px;
+}
+.container {
+    margin: 0 80px;
+}
+.projects_welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+.top h1 {
+    display: flex;
+    justify-content: center;
+}
+.top p {
+    display: flex;
+    justify-content: center;
+}
+.img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.description_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description_img {
+    width: 450px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.description_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid maroon;
+    background-color: tan;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: -60px;
+    width: 190px;
+    height: 560px;
+}
+
+.description_side h3 {
+    color: brown;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid brown;
+}
+.item {
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.item:hover {
+    opacity: 0.7;
+}
+
+.description_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 165px;
+    width: 600px;
+    height: 590px;
+}
+.description_main a {
+    text-decoration: none;
+    color: skyblue;
+    font-size: 20px;
+}
+
+.match_desciption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+#partial_a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: maroon;
+}
+.project {
+    display: flex;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
