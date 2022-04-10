@@ -1,3 +1,4 @@
 # Spiced_Academy
 
-This repository covers the exercises and projects which i carried out in he 12-week intensive course in spiced academy full stack web development bootcamp.
+##Overview
+This repository covers some exercises and  some projects which I carried out in an intensive Full Stack Web Development course.
